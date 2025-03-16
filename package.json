@@ -11,7 +11,8 @@
 	},
 	"scripts": {
 		"start": "bun run src/index.ts",
-		"ext": "zig build-lib ext/win.cpp -dynamic -lShlwapi -lc -lc++"
+		"ext": "zig build-lib ext/win.cpp -dynamic -lShlwapi -lc -lc++",
+		"compile": "bun build ./src/index.ts package.json  --compile --outfile out.exe "
 	},
 	"dependencies": {
 		"global-mouse-events": "^1.2.0",
