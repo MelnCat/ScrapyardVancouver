@@ -1,0 +1,27 @@
+{
+	"name": "scrapyardvancouver",
+	"module": "index.ts",
+	"type": "module",
+	"private": true,
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"scripts": {
+		"start": "bun run src/index.ts",
+		"ext": "zig build-lib ext/win.cpp -dynamic -lShlwapi -lc -lc++"
+	},
+	"dependencies": {
+		"global-mouse-events": "^1.2.0",
+		"node-global-key-listener": "^0.3.0",
+		"wallpaper": "^7.2.1",
+		"win32-api": "^26.1.2"
+	},
+	"trustedDependencies": [
+		"global-mouse-events",
+		"koffi"
+	],
+	"packageManager": "pnpm@8.6.1+sha512.3f9e23f20bdbf7a27b87b804383f1dafdb5cb35cdc40fce590aff2215255446ff595878ee4f33429e6a0e7c3882b1ae926514f6fea6a5ba75e52f87bfc2592e7"
+}
